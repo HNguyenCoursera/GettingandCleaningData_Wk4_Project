@@ -33,3 +33,8 @@ Submitted R code file, "run_analysis.R", performs the 5 following steps (in acco
   5.1 Making second tidy data set
   5.2 Writing second tidy data set in txt file
 The code assumes all the data is present in the same folder, un-compressed and without names altered.
+
+About variables: 
+x_train, y_train, x_test, y_test, subjectTrain, subjectTest, activityTrain, activityTest, featuresTrain and featuresTest contain the data from the downloaded files.
+subject, activity and features merge the previous datasets for further analysis.
+extractedData contains the correct names which are applied to the column names stored in
