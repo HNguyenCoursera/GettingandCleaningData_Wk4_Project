@@ -1,0 +1,35 @@
+Code book for the Getting and Cleaning Data Week 4 project
+
+Download data from the link below and unzip it into working directory of R Studio.
+Execute the R script.
+
+About Source Data:
+The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Here are the data for the project:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+About R script:
+Submitted R code file, "run_analysis.R", performs the 5 following steps (in accordance assigned task of course work):
+
+1 - Reading in the files and merging the training and the test sets to create one data set.
+  1.1 Reading files
+  1.1.1 Reading trainings data
+  1.1.2 Reading testing data
+  1.1.3 Reading subject data
+  1.1.4 Reading activity data
+  1.1.5 Reading features data
+  1.2 Assigning variable names: subject, activity and features
+  1.3 Merging all data in one set: completeData
+2 - Extracting only the measurements on the mean and standard deviation for each measurement
+  2.1 Create vector for defining ID, mean and standard deviation
+  2.2 Making nessesary subset from merged data set
+3 - Using descriptive activity names to name the activities in the data set
+  3.1 Change activity field in extractedData type from numeric to character
+  3.2 Updated activity names in the activity variable
+4 - Appropriately labeling the data set with descriptive variable names
+5 - Creating a second, independent tidy data set with the average of each variable for each activity and each subject
+  5.1 Making second tidy data set
+  5.2 Writing second tidy data set in txt file
+The code assumes all the data is present in the same folder, un-compressed and without names altered.
